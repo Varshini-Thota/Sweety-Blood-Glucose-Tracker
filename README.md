@@ -71,8 +71,11 @@ Install the following before running the application:
 
 1. Open PostgreSQL.
 2. Create a database named `sweety_db`.
-3. Create the `users` and `readings` tables using the database schema provided with the project.
-4. Configure the backend environment variables.
+3.  Run the schema file from the project root:
+
+   psql -U postgres -d sweety_db -f backend/schema.sql
+4. Create the `users` and `readings` tables using the database schema provided with the project.
+5. Configure the backend environment variables.
 
 ## Backend Setup
 
