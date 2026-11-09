@@ -177,10 +177,25 @@ The following features have been tested:
 - Monthly reports.
 - Protected API access.
 
-## Assumptions and Future Improvements
 
-- Each user can record a maximum of four readings per day, one for each slot.
-- Glucose values are stored in mg/dL.
+## Notes
+
+## Assumptions
+
+- Each user can add a maximum of four glucose readings per day.
+
+- Each reading slot can have only one entry per date.
+
+- Glucose values must be whole numbers between 40 and 600 mg/dL.
+
+- Future dates are not allowed.
+
+- Users can view and manage only their own readings.
+
+- Passwords are securely hashed using bcrypt.
+
+## Future Improvements
+
 - Future improvements may include graphical trend charts, downloadable reports, pagination, and deployment to a cloud platform.
 
 ## Author
